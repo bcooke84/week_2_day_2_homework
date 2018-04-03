@@ -10,8 +10,10 @@ class BearTest < MiniTest::Test
   def setup()
     stomach = []
     @bear = Bear.new("Yogi", stomach)
+
     @fish = Fish.new("Salmon")
     @fish2 = Fish.new("Cod")
+    
     @river = River.new("Amazon", [@fish, @fish2])
   end
   def test_get_name()
