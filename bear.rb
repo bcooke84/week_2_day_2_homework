@@ -11,4 +11,13 @@ class Bear
     @stomach.push(fish)
     river.remove_fish(fish)
   end
+
+  def bear_roar()
+    return "ROAR!"
+  end
+
+  def food_count
+    @stomach.count()
+  end
+
 end

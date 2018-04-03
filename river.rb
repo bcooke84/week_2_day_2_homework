@@ -11,4 +11,8 @@ class River
     @fish_stock.delete(fish)
   end
 
+  def fish_count()
+    @fish_stock.count
+  end
+
 end
