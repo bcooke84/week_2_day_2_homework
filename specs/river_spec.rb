@@ -6,13 +6,12 @@ require_relative("../fish.rb")
 require_relative("../bear.rb")
 
 class RiverTest < MiniTest::Test
+
   def setup()
     @fish = Fish.new("Salmon")
     @fish2 = Fish.new("Haddock")
     @fish3 = Fish.new("Cod")
-
-    fish_stock = [@fish, @fish2, @fish3]
-    @river = River.new("Amazon", fish_stock)
+    @river = River.new("Amazon", [@fish, @fish2, @fish3])
   end
 
   def test_get_name()
